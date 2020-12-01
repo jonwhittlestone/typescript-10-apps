@@ -1,0 +1,24 @@
+{
+  "name": "typescript-10-apps",
+  "version": "1.0.0",
+  "description": "10 node apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonwhittlestone/typescript-10-apps.git"
+  },
+  "author": "Jon Whittlestone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonwhittlestone/typescript-10-apps/issues"
+  },
+  "homepage": "https://github.com/jonwhittlestone/typescript-10-apps#readme",
+  "dependencies": {
+    "@types/node": "^14.14.10",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  }
+}
