@@ -1,3 +1,5 @@
+type GuessedNumber = string
+
 console.log('--------------------------------------------------')
 console.log('             02 GUESS THAT NUMBER GAME            ')
 console.log('--------------------------------------------------')
@@ -20,7 +22,7 @@ var terminal = readline.createInterface({
 terminal.setPrompt('Guess the number! (0-10): ');
 
 terminal.prompt();
-terminal.on('line', (answer: string) => {
+terminal.on('line', (answer: GuessedNumber) => {
 
   var answerNum = +answer;
 
