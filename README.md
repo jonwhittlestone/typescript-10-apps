@@ -9,3 +9,7 @@
 2.  ✅ Guess that number app
 
         npx tsc && node dist/02-guess-that-number.js
+
+3.  ✅ Birthday app
+
+        npx tsc && node dist/03-birthday.js

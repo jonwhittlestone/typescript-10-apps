@@ -12,6 +12,7 @@
     "build": "npx tsc",
     "go-1": "npx tsc && node dist/01-hello-world.js",
     "go-2": "npx tsc && node dist/02-guess-that-number.js",
+    "go-3": "npx tsc && node dist/03-birthday.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

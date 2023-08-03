@@ -18,6 +18,15 @@
       "program": "${workspaceFolder}/src/02-guess-that-number.ts",
       "preLaunchTask": "tsc: build - tsconfig.json",
       "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run 03-birthday",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/03-birthday.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
     }
   ]
 }

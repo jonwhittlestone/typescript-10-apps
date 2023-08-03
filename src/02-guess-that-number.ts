@@ -33,47 +33,47 @@ function main_02(): void {
     terminal.prompt();
     terminal.on('line', (answer: GuessedNumber) => {
 
-    var answerNum = +answer;
+        var answerNum = +answer;
 
-    if (answerNum > randomNumber)
-    {
-        console.log('Too high!');
-        console.log('You have '+lives+' lives left');
-    }
+        if (answerNum > randomNumber)
+        {
+            console.log('Too high!');
+            console.log('You have '+lives+' lives left');
+        }
 
-    else if (answerNum < randomNumber)
-    {
-        console.log('Too low!');
-        console.log('You have '+lives+' lives left');
-    }
+        else if (answerNum < randomNumber)
+        {
+            console.log('Too low!');
+            console.log('You have '+lives+' lives left');
+        }
 
-    else if (answerNum === randomNumber)
-    {
-        console.log('W I N N E R ! ! !');
-        console.log('You lost only '+ (6-lives) + ' lives');
-        process.exit(0);
-    }
+        else if (answerNum === randomNumber)
+        {
+            console.log('W I N N E R ! ! !');
+            console.log('You lost only '+ (6-lives) + ' lives');
+            process.exit(0);
+        }
 
-    else
-    {
-        console.log("That wasn't a number I recognise");
-        console.log('You have '+lives+' lives');
-    }
+        else
+        {
+            console.log("That wasn't a number I recognise");
+            console.log('You have '+lives+' lives');
+        }
 
-    lives--;
-    if (lives == 0)
-    {
-        console.log('G A M E  O V E R ! ! !');
-        process.exit(0);
-    }
+        lives--;
+        if (lives == 0)
+        {
+            console.log('G A M E  O V E R ! ! !');
+            process.exit(0);
+        }
 
-    terminal.prompt();
+        terminal.prompt();
     });
 
     terminal.on('close', function()
     {
-    console.log('C H I C K E N :P')
-    process.exit(1);
+        console.log('C H I C K E N :P')
+        process.exit(1);
     });
 }
 
