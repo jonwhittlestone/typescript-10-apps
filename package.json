@@ -1,0 +1,17 @@
+{
+  "name": "01-hello-world",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.4.6",
+    "figlet": "^1.6.0",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "go-1": "npx tsc && node dist/01-hello-world.js",
+    "go-2": "npx tsc && node dist/02-guess-that-number.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

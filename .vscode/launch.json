@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run 01-hello-world",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/01-hello-world.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run 02-guess-that-number",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/src/02-guess-that-number.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+    }
+  ]
+}
